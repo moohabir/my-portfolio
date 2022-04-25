@@ -3,7 +3,7 @@ import React from "react";
 export default function Contacts() {
   return (
     <div>
-      <h1>Login Components</h1>
+      <h1>Login Component</h1>
     </div>
   );
 }
