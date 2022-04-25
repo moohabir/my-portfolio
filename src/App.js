@@ -4,6 +4,7 @@ import Projects from "./Projects";
 import Home from "./Home";
 import About from "./About";
 import Contacts from "./Contacts";
+import Login from "./Login";
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
         <li>
           <Link to="/contacts">Contacts</Link>
         </li>
+        <li>
+          <Link to="/login">Login</Link>
+        </li>
       </ul>
 
       <hr />
@@ -29,6 +33,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
