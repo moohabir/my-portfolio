@@ -10,11 +10,17 @@ body {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+}
+.logo-link {
   text-decoration: none;
 }
 .nav-items {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: sans-serif;
   align-items: center;
+}
+.link {
+  text-decoration: none;
+  padding: 10px;
 }

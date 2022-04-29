@@ -5,16 +5,29 @@ export default function () {
     <div className="header">
       {/* logo */}
       <div className="logo">
-        <Link to="/"> MOAbdille </Link>
+        <Link to="/" className="logo-link">
+          {" "}
+          MOAbdille{" "}
+        </Link>
       </div>
 
       {/* large screens */}
       <div className="nav-items">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contacts">Contacts</Link>
-        <Link to="/login">Login</Link>
+        <Link to="/" className="link">
+          Home
+        </Link>
+        <Link to="/about" className="link">
+          About
+        </Link>
+        <Link to="/projects" className="link">
+          Projects
+        </Link>
+        <Link to="/contacts" className="link">
+          Contacts
+        </Link>
+        <Link to="/login" className="link">
+          Login
+        </Link>
       </div>
 
       {/*small screens */}
