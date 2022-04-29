@@ -1,4 +1,20 @@
-.App {
+body {
+  font-family: lobster, sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightblue;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-items {
+  font-weight: bold;
+  font-size: 1.2rem;
   font-family: sans-serif;
-  text-align: center;
+  align-items: center;
 }
