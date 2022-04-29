@@ -22,11 +22,11 @@ export default function () {
         <Link to="/projects" className="link">
           Projects
         </Link>
+        <Link to="/skills" className="link">
+          Skills
+        </Link>
         <Link to="/contacts" className="link">
           Contacts
-        </Link>
-        <Link to="/login" className="link">
-          Login
         </Link>
       </div>
 
@@ -37,7 +37,7 @@ export default function () {
         <Link to="/about">About</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/contacts">Contacts</Link>
-        <Link to="/login">Login</Link>
+        <Link to="/skills">Skills</Link>
       </div>
     </div>
   );

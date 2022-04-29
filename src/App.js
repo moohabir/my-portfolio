@@ -4,7 +4,7 @@ import Projects from "./Projects";
 import Home from "./Home";
 import About from "./About";
 import Contacts from "./Contacts";
-import Login from "./Login";
+import Skills from "./Skills";
 import Header from "./Header";
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contacts" element={<Contacts />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/skills" element={<Skills />} />
         </Routes>
       </div>
     </Router>
