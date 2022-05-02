@@ -2,7 +2,7 @@ import React from "react";
 import data from "./data";
 export default function Contacts() {
   return (
-    <div>
+    <div className="skills-main">
       <h1>My Skills are ....</h1>
       <div>
         {data.map((item) => {

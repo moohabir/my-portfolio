@@ -6,6 +6,7 @@ import About from "./About";
 import Contacts from "./Contacts";
 import Skills from "./Skills";
 import Header from "./Header";
+import Footer from "./Footer";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/skills" element={<Skills />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

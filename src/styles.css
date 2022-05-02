@@ -21,19 +21,72 @@ body {
   font-size: 1.3rem;
   font-family: sans-serif;
   align-items: center;
- 
 }
 .link {
   text-decoration: none;
   padding: 10px;
 }
-.nav-items :hover{
+.nav-items :hover {
   background-color: lightgreen;
   cursor: pointer;
   height: auto;
 }
 
+.skills-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 1px solid green;
+  border-radius: 12px;
+}
+
 .skills {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: lightgrey;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px;
+}
+.menubar {
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+}
+
+@media (max-width: 640px) {
+  .nav-items {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 400px) {
+  .menubar {
+    visibility: visible;
+  }
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+  }
 }
