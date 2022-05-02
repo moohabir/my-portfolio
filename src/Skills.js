@@ -4,7 +4,7 @@ export default function Contacts() {
   return (
     <div className="skills-main">
       <h1>My Skills are ....</h1>
-      <div>
+      <div className="skill-column">
         {data.map((item) => {
           return (
             <div key={item.id}>

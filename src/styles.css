@@ -43,6 +43,17 @@ body {
   margin-bottom: 40px;
   border: 1px solid green;
   border-radius: 12px;
+
+}
+.skill-column{
+  display: flex;
+  flex-direction: row;
+  column-gap: 17px;
+  padding: 10px;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  
 }
 
 .skills {
@@ -54,6 +65,8 @@ body {
   background-color: lightgrey;
   margin-top: 40px;
   margin-bottom: 40px;
+  margin-right: auto;
+  padding: 10px;
 }
 
 .footer {
@@ -72,21 +85,33 @@ body {
   align-items: center;
   height: 30px;
   width: 30px;
+  position: relative;
   margin-right: 20px;
 }
 
 @media (max-width: 640px) {
-  .nav-items {
+  .link{
     visibility: hidden;
   }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 640px) {
   .menubar {
-    visibility: visible;
+    visibility: hidden;
   }
-  .nav-items {
+}
+
+@media (max-width: 640) {
+  .menubar{
+    visibility: visible;
+    height: 30px;
+    width: 30px;
+    
+  }
+}
+
+@media (max-width: 640px){
+  .skill-column {
     display: flex;
     flex-direction: column;
-  }
 }
