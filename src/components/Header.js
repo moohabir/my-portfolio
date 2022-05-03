@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 export default function () {
+  const [open, setOpen] = useState(false);
+
+  function togle() {
+    setOpen(!open);
+  }
   return (
     <div className="header">
       {/* logo */}
@@ -40,7 +45,7 @@ export default function () {
         <Link to="/skills">Skills</Link>
       </div>
       <div className="menubar">
-        <Link to="">
+        <Link to="svg" className="menubar" /*onClick={togle*/>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"
@@ -48,11 +53,13 @@ export default function () {
             viewBox="0 0 24 24"
             stroke="currentColor"
             stroke-width="2"
+            className="menubar"
           >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
               d="M4 6h16M4 12h16M4 18h16"
+              className="menubar"
             />
           </svg>
         </Link>

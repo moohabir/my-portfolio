@@ -1,12 +1,12 @@
 import "./styles.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Projects from "./Projects";
-import Home from "./Home";
-import About from "./About";
-import Contacts from "./Contacts";
-import Skills from "./Skills";
-import Header from "./Header";
-import Footer from "./Footer";
+import Projects from "./pages/Projects";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contacts from "./pages/Contacts";
+import Skills from "./pages/Skills";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
