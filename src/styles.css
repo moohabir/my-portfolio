@@ -160,3 +160,22 @@ body {
     flex-direction: column;
   }
 }
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.image {
+  display: block;
+  float: right;
+}
+.about-btn {
+  background-color: blue;
+  border: 1px solid green;
+  border-radius: 12px;
+}
