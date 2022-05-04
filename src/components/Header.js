@@ -13,8 +13,7 @@ export default function () {
       {/* logo */}
       <div className="logo">
         <Link to="/" className="logo-link">
-          {" "}
-          MOAbdille{" "}
+          MOAbdille
         </Link>
       </div>
 
@@ -40,21 +39,25 @@ export default function () {
       {/*small screens */}
 
       <div className="list-mobile">
-        <Link to="/" className="mobile-link">
-          Home
-        </Link>
-        <Link to="/about" className="mobile-link">
-          About
-        </Link>
-        <Link to="/projects" className="mobile-link">
-          Projects
-        </Link>
-        <Link to="/contacts" className="mobile-link">
-          Contacts
-        </Link>
-        <Link to="/skills" className="mobile-link">
-          Skills
-        </Link>
+        {open && (
+          <div className="list-mobile-sub">
+            <Link to="/" className="mobile-link">
+              Home
+            </Link>
+            <Link to="/about" className="mobile-link">
+              About
+            </Link>
+            <Link to="/projects" className="mobile-link">
+              Projects
+            </Link>
+            <Link to="/contacts" className="mobile-link">
+              Contacts
+            </Link>
+            <Link to="/skills" className="mobile-link">
+              Skills
+            </Link>
+          </div>
+        )}
       </div>
       <div className="main-menubar" onClick={togle}>
         {open ? (
