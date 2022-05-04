@@ -39,12 +39,22 @@ export default function () {
 
       {/*small screens */}
 
-      <div hidden className="list-mobile">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contacts">Contacts</Link>
-        <Link to="/skills">Skills</Link>
+      <div className="list-mobile">
+        <Link to="/" className="mobile-link">
+          Home
+        </Link>
+        <Link to="/about" className="mobile-link">
+          About
+        </Link>
+        <Link to="/projects" className="mobile-link">
+          Projects
+        </Link>
+        <Link to="/contacts" className="mobile-link">
+          Contacts
+        </Link>
+        <Link to="/skills" className="mobile-link">
+          Skills
+        </Link>
       </div>
       <div className="main-menubar" onClick={togle}>
         {open ? (

@@ -29,12 +29,22 @@ body {
 }
 .list-mobile {
   display: flex;
+  float: right;
   flex-direction: column;
-  align-items: center;
+  align-items: right;
   text-align: center;
   gap: 16px;
   padding: 10px;
   margin-top: 40px;
+  padding-top: 200px;
+
+  float: right;
+  top: 0;
+  z-index: 50px;
+}
+.mobile-link {
+  text-decoration: none;
+  list-style: none;
 }
 
 .main-menubar {
@@ -45,6 +55,8 @@ body {
   align-content: center;
   text-align: center;
   height: 7px;
+  margin-bottom: 25px;
+  z-index: -50;
 }
 .menubar {
   height: 40px;
@@ -105,8 +117,6 @@ body {
 }
 .hero-image {
   border: none;
-
-  border-radius: 12px;
   border-radius: 50%;
 }
 .hero-title {
@@ -144,15 +154,14 @@ body {
   .menubar {
     visibility: hidden;
   }
+  .list-mobile {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 640) {
   .menubar {
     visibility: visible;
-    height: 30px;
-    width: 30px;
-    align-items: ce;
-    float: center;
   }
 }
 
