@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import heroImage from "../assets/heroImage.png";
+
 export default function About() {
   return (
     <div className="about">
@@ -14,8 +16,13 @@ export default function About() {
           I am Front-end <br /> Web Developer
         </h1>
         <h1 className="hero-title">And Blockchain Developer</h1>
-        <button className="about-btn"> Hire Me </button>
-        <button className="about-btn"> Contact Me </button>
+        <Link to="contacts">
+          <button className="about-btn"> Hire Me </button>
+        </Link>
+
+        <Link to="contacts">
+          <button className="about-btn"> Contact Me </button>
+        </Link>
       </div>
     </div>
   );
