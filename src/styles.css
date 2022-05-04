@@ -27,17 +27,28 @@ body {
   text-decoration: none;
   padding: 10px;
 }
+.list-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 10px;
+  margin-top: 40px;
+}
 
-.menubar {
+.main-menubar {
   font-weight: bold;
   font-size: 1.3rem;
   font-family: sans-serif;
   align-items: center;
   align-content: center;
   text-align: center;
-  height: 30px;
-  width: 30px;
-  margin-right: 20px;
+  height: 7px;
+}
+.menubar {
+  height: 40px;
+  cursor: pointer;
 }
 .nav-items :hover {
   background-color: lightgreen;
@@ -91,13 +102,11 @@ body {
 }
 .hero-left {
   border-radius: 50%;
-  width: 100%;
 }
 .hero-image {
   border: none;
-  background-clip: lightgrey;
+
   border-radius: 12px;
-  padding-left: 0;
   border-radius: 50%;
 }
 .hero-title {

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import menubar from "../assets/menubar.png";
+import cross from "../assets/cross.jpg";
 export default function () {
   const [open, setOpen] = useState(false);
 
@@ -37,32 +39,19 @@ export default function () {
 
       {/*small screens */}
 
-      <div hidden>
+      <div hidden className="list-mobile">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/contacts">Contacts</Link>
         <Link to="/skills">Skills</Link>
       </div>
-      <div className="menubar">
-        <Link to="svg" className="menubar" /*onClick={togle*/>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-            className="menubar"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
-              className="menubar"
-            />
-          </svg>
-        </Link>
+      <div className="main-menubar" onClick={togle}>
+        {open ? (
+          <img src={cross} className="menubar" alt="" />
+        ) : (
+          <img src={menubar} alt="" className="menubar" />
+        )}
       </div>
     </div>
   );
