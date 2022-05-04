@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import menubar from "../assets/menubar.png";
+import menubar from "../assets/menubar.jpg";
 import cross from "../assets/cross.jpg";
 export default function () {
   const [open, setOpen] = useState(false);
