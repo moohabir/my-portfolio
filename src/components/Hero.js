@@ -1,12 +1,12 @@
 import React from "react";
-import heroImage from "../assets/heroImage.jpg";
+//import heroImage from "../assets/heroImage.jpg";
 export default function Hero() {
   return (
     <div className="hero">
       {/*image will be left side on mobile column above and center*/}
-      <div className="hero-left">
+      {/* <div className="hero-left">
         <img src={heroImage} alt="" className="hero-image" />
-      </div>
+  </div> */}
 
       {/*below will be right side*/}
       <div className="hero-right">

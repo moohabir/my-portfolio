@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import heroImage from "../assets/heroImage.jpg";
+//import heroImage from "../assets/heroImage.jpg";
 
 export default function About() {
   return (
     <div className="about">
       {/*image will be left side on mobile column above and center*/}
-      <div className="image">
+      {/*<div className="image">
         <img src={heroImage} alt="" className="about-image" />
-      </div>
+  </div> */}
 
       {/*below will be right side*/}
       <div className="hero-right">

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import menubar from "../assets/menubar.jpg";
-import cross from "../assets/cross.jpg";
+
 export default function () {
   const [open, setOpen] = useState(false);
 
@@ -61,9 +60,9 @@ export default function () {
       </div>
       <div className="main-menubar" onClick={togle}>
         {open ? (
-          <img src={cross} className="menubar" alt="" />
+          <img src="/assets/cross.png" alt="" />
         ) : (
-          <img src={menubar} alt="" className="menubar" />
+          <img src="/assets/menubar.png" alt="" className="menubar" />
         )}
       </div>
     </div>
