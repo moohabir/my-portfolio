@@ -218,3 +218,44 @@ body {
   color: white;
   animation-direction: alternate-reverse;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  max-width: 100%;
+}
+.input {
+  margin: 10px;
+  width: 80%;
+  align-items: center;
+  text-align: center;
+  height: 30px;
+  text-indent: 16px;
+}
+.email {
+  margin: 10px;
+  width: 80%;
+  align-items: center;
+  text-align: center;
+  height: 30px;
+  text-indent: 16px;
+}
+.comments {
+  margin: 10px;
+  width: 80%;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  height: 100px;
+}
+.form-btn {
+  margin: 10px;
+  width: 80%;
+  align-items: center;
+  height: 30px;
+  text-indent: 16px;
+}
