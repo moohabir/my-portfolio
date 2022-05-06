@@ -166,19 +166,16 @@ body {
 }
 
 @media (min-width: 640px) {
-  .menubar {
+  .main-menubar {
     visibility: hidden;
   }
   .list-mobile {
     visibility: hidden;
-  }
+ 
+  
 }
 
-@media (max-width: 640) {
-  .menubar {
-    visibility: visible;
-  }
-}
+
 
 @media (max-width: 640px) {
   .skill-column {

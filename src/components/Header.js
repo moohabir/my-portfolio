@@ -36,7 +36,7 @@ export default function () {
       </div>
 
       {/*small screens */}
-
+      {/*<div className="mobile-version"> */}
       <div className="list-mobile">
         {open && (
           <div className="list-mobile-sub">
@@ -60,11 +60,12 @@ export default function () {
       </div>
       <div className="main-menubar" onClick={togle}>
         {open ? (
-          <img src="/assets/cross.png" alt="" />
+          <img src="/assets/cross.png" alt="" className="cross-bar" />
         ) : (
           <img src="/assets/menubar.png" alt="" className="menubar" />
         )}
       </div>
+      {/*</div> */}
     </div>
   );
 }
