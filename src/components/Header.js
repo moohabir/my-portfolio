@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { AiOutlineMenu } from "react-icons/ai";
+import { ImCross } from "react-icons/im";
 
 export default function () {
   const [open, setOpen] = useState(false);
@@ -60,9 +62,9 @@ export default function () {
       </div>
       <div className="main-menubar" onClick={togle}>
         {open ? (
-          <img src="/assets/cross.png" alt="" className="cross-bar" />
+          <ImCross className="cross-bar" />
         ) : (
-          <img src="/assets/menubar.png" alt="" className="menubar" />
+          <AiOutlineMenu className="menu-bar" />
         )}
       </div>
       {/*</div> */}
